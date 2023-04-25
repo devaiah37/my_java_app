@@ -19,7 +19,7 @@ public class MyApp{
         BufferedImage flowerImage = null;
 
         ClassLoader classLoader = MyApp.class.getClassLoader();
-        InputStream resourceAsStream = classLoader.getResourceAsStream("images/img.png");
+        InputStream resourceAsStream = classLoader.getResourceAsStream("images/inst.jpg");
         try {
             BufferedImage image = ImageIO.read(resourceAsStream);
             TextWidget widget = new PictureWidget(new TextBoxSize(80, 30),
